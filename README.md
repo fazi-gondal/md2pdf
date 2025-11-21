@@ -10,6 +10,15 @@
 
 ### Try out the website : [markdown2pdf](https://markdownd2pdf.vercel.app/)
 
+### Key Features (Use as Highlights)
+✨ **Instant Conversion** - Real-time preview as you type
+🎨 **GitHub Flavored Markdown** - Full GFM support with tables, code blocks, and syntax highlighting
+📊 **Rich Content Support** - LaTeX math formulas & Mermaid diagrams
+🔒 **Privacy-First** - All processing happens locally in your browser
+💻 **Developer-Friendly** - Code syntax highlighting for 100+ languages
+📱 **Responsive Design** - Works perfectly on desktop and mobile
+⚡ **No Installation** - Pure web app, zero setup required
+
 ## 👉 How to Use
 1. Click the button to select a `.md` file.
 2. Edit your content in the left-hand panel.
