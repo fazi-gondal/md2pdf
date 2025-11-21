@@ -1,0 +1,42 @@
+{
+  "name": "markdown2pdf",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.2.3",
+    "@codemirror/language-data": "^6.3.1",
+    "@uiw/codemirror-theme-androidstudio": "^4.21.21",
+    "@uiw/codemirror-themes-all": "^4.24.1",
+    "@uiw/react-codemirror": "^4.24.1",
+    "@uiw/react-markdown-preview": "^5.1.4",
+    "katex": "^0.16.22",
+    "mermaid": "^11.10.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.5.6",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.2.1"
+  }
+}

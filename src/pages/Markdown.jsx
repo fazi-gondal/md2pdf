@@ -1,0 +1,36 @@
+import { useRef } from "react";
+import Header from "../components/Header";
+import MarkdownEditor from "../components/MdEditorComponent";
+import MarkdownPreview from "../components/MdPreviewComponent";
+import PreviewButton from "../components/PreviewButton";
+import usePageEvents from "../hooks/usePageEvents";
+
+function Markdown() {
+  const previewRef = useRef(null);
+  // Custom hook to handle page events
+  usePageEvents();
+  
+  return (
+    <>
+      <style>{`
+        @media print {
+          * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+          }
+        }
+      `}</style>
+      <div className="flex h-dvh max-h-dvh min-h-dvh flex-col overflow-hidden print:h-auto print:max-h-none">
+        <Header />
+        <section className="relative flex max-h-full flex-grow flex-row overflow-hidden">
+          <MarkdownEditor />
+          <MarkdownPreview previewRef={previewRef} />
+        </section>
+        {/* Preview button for mobile */}
+        <PreviewButton previewRef={previewRef} />
+      </div>
+    </>
+  );
+}
+export default Markdown;
